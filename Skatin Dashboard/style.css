@@ -1,0 +1,491 @@
+@font-face{
+	font-family: poppins;
+	src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+:root{
+	--dark-bg: #223;
+	--dark-color: #112;
+	--dark-text: #999;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: poppins;
+}
+.bar{
+	position: absolute;
+	z-index: 100;
+	right: 15px;
+	top: 30px;
+}
+.bar i{
+	font-size: 1.6em;
+	color: #fff;
+}
+#sidebar{
+	padding: 20px;
+	height: 100vh;
+	width: 150px;
+	position: fixed;
+	padding: block;
+	background: var(--dark-bg);
+}
+.brand-logo a{
+	font-size: 1.5em;
+	color: #fff;
+	font-family: poppins;
+}
+.menu{
+	margin-top: 20px;
+	width: 150px;
+	display: block;
+
+}
+.menu h5{
+	text-transform: uppercase;
+	color: var(--dark-text);
+	margin-bottom: 10px;
+	display: block;
+}
+.menu ul{
+	width: 100%;
+		border-bottom: 1px solid var(--dark-color);
+		padding-bottom: 20px;
+		margin-bottom: 10px;
+}
+
+.menu li a{
+	display: flex;
+	/*padding: 5px;*/
+	/*color: var(--dark-text);*/
+	text-transform: capitalize;
+	/*margin-bottom: 10px;*/
+}
+.menu li a span:last-child{
+	/*margin-top: 50px;*/
+	color: var(--dark-text);
+
+}
+.menu span{
+	color: #fff;
+	padding: 8px;
+}
+.menu li a span:first-child{
+	background: var(--dark-color);
+	border-radius: 10px;
+	height: 35px;
+	display: inline-block;
+}
+
+.menu li a.active span:first-child{
+	background: orangered;
+	color: #fff;
+}
+.menu li a.active span:last-child{
+	color: #fff;
+}
+.modes{
+	padding: 5px 0px;
+	width: 130px;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	color: var(--dark-text);
+
+}
+.modes span:last-child{
+	margin-left: 5px;
+}
+.modes span:first-child{
+	color: orangered;
+	font-size: 1.3em;
+}
+
+
+
+
+#main{
+	padding:20px 100px;
+	/*height: 100vh;*/
+	/*width: 100%;*/
+	background: var(--dark-bg);
+	margin-left: 150px;
+}
+#main .sub-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#main .search{
+	border-radius: 10px;
+	background: var(--dark-color);
+	width:60%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#main .search input{
+	background: transparent;
+	border: none;
+	padding: 10px;
+	width: 90%;
+	outline: none;
+	color: #fff;
+	display: inline-block;
+}
+#main .search span{
+	display: inline-block;
+	/*padding: 5px 10px;*/
+	font-size: 1.3em;
+	color: var(--dark-text);
+}
+#main .user {
+	display: flex;
+	/*padding: 10px;*/
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 100px;
+	color: var(--dark-text);
+}
+#main .user img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+#main a{
+	color: var(--dark-text);
+	margin-right: 10px;
+}
+#main .user span:last-child{
+	margin-left: 20px;
+}
+
+.discover{
+	margin-top: 20px;
+	padding: 10px 0;
+	color: #fff;
+}
+.discover h3{
+	margin: 10px 0;
+}
+.discover-grid{
+	display: grid;
+	grid-template-columns: 60% auto;
+	grid-gap: 50px;
+}
+.discover-grid img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+.discover-grid > div:first-child{
+	padding: 20px 20px 50px 20px;
+	background: url('img/banner/banner1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	position: relative;
+}
+.discover-grid div:first-child h3{
+	width: 25%;
+}
+.discover-grid div:first-child > div{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.discover-grid  span:last-child{
+	font-size: .8em;
+	/*margin-top: -40px;*/
+	display: block;
+}
+.discover-grid .time{
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	background: var(--dark-color);
+	padding: 7px 10px;
+	border-radius: 10px;
+}
+.discover-grid > div:last-child{
+	background: url(img/banner/banner2.jpg);
+	padding: 20px 20px 50px 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	position: relative;
+}
+.discover-grid div:last-child h3{
+	width: 60%;
+}
+.discover-grid div:first-child > div{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.discover-grid  span:last-child{
+	font-size: .8em;
+	/*margin-top: -40px;*/
+	display: block;
+}
+.discover-grid .time{
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	background: var(--dark-color);
+	padding: 7px 10px;
+	border-radius: 10px;
+}
+
+.most-watched{
+	padding: 20px 0px;
+	color: #fff;
+}
+.most-watched h3{
+	margin: 10px 0px;
+}
+.watch-list{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+.watch-list .post{
+	width: 100%;
+	height: 300px;
+	background: var(--dark-color);
+	border-radius: 20px;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+.watch-list .time{
+	padding: 7px 10px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	background: var(--dark-bg);
+	border-radius: 10px;
+}
+.watch-list .post img{
+	width: 100%;
+	height: 60%;
+}
+.watch-list .post div{
+	padding:5px 10px; 
+	position: relative;
+}
+.watch-list .post .profile-pic{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 10px;
+	top: -30px;
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 786px){
+	#sidebar{
+	padding: 20px auto auto 30px;
+	height: 100vh;
+	width: 80%;
+	position: fixed;
+	padding: block;
+	background: var(--dark-bg);
+	z-index: 100;
+	display: none;
+	}
+
+	#main{
+	padding:20px;
+	/*height: 100vh;*/
+	width: 100vw !important;
+	display: block;
+	background: var(--dark-bg);
+	margin :0px ;
+}
+#main .sub-menu{
+	margin: 0;
+	display: flex;
+	/*justify-content: space-between;*/
+	align-items: center;
+	/*background: teal;*/
+}
+#main .search{
+	border-radius: 10px;
+	/*background: var(--dark-color);*/
+	background: none;
+	/*width:300px !important;*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#main .search input{
+	background: transparent;
+	border: none;
+	padding: 10px;
+	width: ;
+	outline: none;
+	color: #fff;
+	background: green;
+	display: none;
+}
+#main .search span{
+	display: inline-block;
+	/*padding: 5px 10px;*/
+	font-size: 1.3em;
+	color: var(--dark-text);
+}
+#main .user {
+	display: flex;
+	/*padding: 10px;*/
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 50px;
+	color: var(--dark-text);
+}
+#main .user img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+#main a{
+	color: var(--dark-text);
+	margin-right: 10px;
+}
+#main .user span:last-child{
+	margin-left: 10px;
+}
+
+.discover{
+	margin-top: 20px;
+	padding: 10px 0;
+	color: #fff;
+}
+.discover h3{
+	margin: 10px 0;
+}
+.discover-grid{
+	display: flex;
+	flex-direction: column;
+}
+.discover-grid img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+.discover-grid > div:first-child{
+	padding: 20px 20px 50px 20px;
+	background: url('img/banner/banner1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	position: relative;
+}
+.discover-grid div:first-child h3{
+	width: 55%;
+}
+.discover-grid div:first-child > div{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.discover-grid > div:last-child{
+	background: url(img/banner/banner2.jpg);
+	padding: 20px 20px 50px 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	position: relative;
+}
+.discover-grid div:last-child h3{
+	width: 60%;
+}
+.discover-grid div:first-child > div{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.discover-grid  span:last-child{
+	font-size: .8em;
+	/*margin-top: -40px;*/
+	display: block;
+}
+.discover-grid .time{
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	background: var(--dark-color);
+	padding: 7px 10px;
+	border-radius: 10px;
+}
+
+.most-watched{
+	padding: 20px 0px;
+	color: #fff;
+}
+.most-watched h3{
+	margin: 10px 0px;
+}
+.watch-list{
+	display: flex;
+	flex-direction: column;
+}
+.watch-list .post{
+	width: 100%;
+	height: 300px;
+	background: var(--dark-color);
+	border-radius: 20px;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+.watch-list .time{
+	padding: 7px 10px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	background: var(--dark-bg);
+	border-radius: 10px;
+}
+.watch-list .post img{
+	width: 100%;
+	height: 60%;
+}
+.watch-list .post div{
+	padding:5px 10px; 
+	position: relative;
+}
+.watch-list .post .profile-pic{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 10px;
+	top: -30px;
+	border-radius: 20px;
+}
+
+}
